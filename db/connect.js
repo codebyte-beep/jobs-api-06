@@ -7,8 +7,8 @@ const connectDB = async (url) => {
   });
 
   // Initialize GridFS
-  const gfs = Grid(conn.connection.db, mongoose.mongo);
-  gfs.collection('uploads'); // The collection name for storing files
+  // const gfs = Grid(conn.connection.db, mongoose.mongo);
+  // gfs.collection('uploads'); // The collection name for storing files
 
   return conn;
 }
